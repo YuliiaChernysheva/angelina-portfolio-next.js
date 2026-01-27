@@ -9,6 +9,9 @@ const inter = Inter({
 export const metadata = {
   title: "Portfolio",
   description: "UX/UI Designer portfolio",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
