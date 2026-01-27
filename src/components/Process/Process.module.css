@@ -80,8 +80,8 @@
 
 .cardStep {
   position: absolute;
-  top: -2px;
-  right: -2px;
+  top: -1px;
+  right: -1px;
 
   width: 32px;
   height: 32px;

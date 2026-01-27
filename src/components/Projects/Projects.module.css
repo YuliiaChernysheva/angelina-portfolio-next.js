@@ -62,6 +62,11 @@
   text-decoration-skip-ink: none;
   color: #b45a78;
 }
+.projectTitle:hover,
+.projectTitle:active {
+  color: #8b2948ee;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .projectSubtitle {
   margin-bottom: 8px;
