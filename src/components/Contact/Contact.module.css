@@ -1,0 +1,233 @@
+.contact {
+  padding: 32px 0;
+}
+
+.contactTitle {
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0a0a0a;
+  margin-bottom: 16px;
+}
+
+.contactSubtitle {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #717182;
+  margin-bottom: 17px;
+}
+
+.contactLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactFormField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactFormLabel {
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: -0.01em;
+}
+
+.contactFormInput,
+.contactFormTextarea {
+  width: 100%;
+  border: 0.65px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: #fff9f5;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contactFormTextarea {
+  min-height: 64px;
+  resize: none;
+}
+
+.contactFormInput::placeholder,
+.contactFormTextarea::placeholder {
+  letter-spacing: -0.02em;
+  color: #717182;
+}
+
+.contactFormInput:focus,
+.contactFormTextarea:focus {
+  border-color: rgba(244, 165, 185, 0.3);
+}
+
+.contactFormBtn {
+  width: 100%;
+  border: none;
+  padding: 14px 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: -0.01em;
+  color: #2d2d2d;
+
+  border-radius: 20px;
+  background: #f4a5b9;
+  gap: 17px;
+}
+
+.contactFormBtn:hover,
+.contactFormBtn:active {
+  background: #ee8ea6;
+}
+
+.contactFormBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contactSide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactSideTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+}
+
+.contactSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactSocialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 16px;
+  border: 0.65px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  background: #fff;
+  width: 100%;
+}
+
+.contactSideContainer {
+  border: 0.65px solid rgba(244, 165, 185, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(244, 165, 185, 0.1) 0%,
+    rgba(199, 179, 229, 0.1) 100%
+  );
+}
+
+.contactSideTitleMe {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+  margin-bottom: 8px;
+}
+
+.contactSideText {
+  line-height: 1.625;
+  letter-spacing: -0.01em;
+  color: #717182;
+  font-size: 14px;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.formNote {
+  margin-top: -8px;
+  font-size: 14px;
+  color: #717182;
+  text-align: center;
+}
+
+@media (min-width: 1179px) {
+  .contact {
+    padding: 64px 0;
+  }
+
+  .contactContainer {
+    background: rgba(245, 239, 233, 0.3);
+    padding: 0;
+    max-width: 896px;
+  }
+
+  .contactTitle {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .contactSubtitle {
+    margin: 0 auto 65px;
+    max-width: 641px;
+  }
+
+  .contactLayout {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .contactFormLabel {
+    color: #0a0a0a;
+  }
+
+  .contactForm {
+    flex: 2;
+    max-width: 525px;
+  }
+
+  .contactSide {
+    flex: 1;
+  }
+
+  .contactSocial {
+    margin-bottom: 8px;
+  }
+
+  .contactSocialLink {
+    font-size: 14px;
+  }
+
+  .contactFormTextarea {
+    min-height: 64px;
+  }
+
+  .contactFormBtn {
+    width: 100%;
+    max-width: 525px;
+    gap: 8px;
+  }
+}

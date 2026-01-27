@@ -1,0 +1,41 @@
+.footer {
+  padding: 32px;
+  border-top: 0.65px solid rgba(0, 0, 0, 0.08);
+}
+
+.footerContainer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerMade,
+.footerCopy {
+  display: flex;
+  line-height: 1.42857;
+  letter-spacing: -0.01em;
+  color: #717182;
+  max-width: 309px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.footerHeart {
+  margin: 0 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerHeartIcon {
+  fill: currentColor;
+}
+
+@media (min-width: 1179px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
