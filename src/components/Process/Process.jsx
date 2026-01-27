@@ -60,8 +60,8 @@ export default function Process() {
         >
           <svg
             className={styles.sliderIcon}
-            width="18"
-            height="18"
+            width="35"
+            height="48"
             aria-hidden="true"
           >
             <use href="/icons/symbol-defs.svg#icon_left_arrow"></use>
@@ -168,8 +168,8 @@ export default function Process() {
         >
           <svg
             className={styles.sliderIcon}
-            width="18"
-            height="18"
+            width="35"
+            height="48"
             aria-hidden="true"
           >
             <use href="/icons/symbol-defs.svg#icon_right_arrow"></use>
