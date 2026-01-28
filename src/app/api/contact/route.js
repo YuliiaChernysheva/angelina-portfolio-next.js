@@ -8,7 +8,7 @@ export async function POST(req) {
 
     await resend.emails.send({
       from: process.env.FROM_EMAIL,
-      to: process.env.TO_EMAIL,
+      to: "dikunpavel15@gmail.com",
       subject: "Нова заявка з сайту",
       html: `
         <h2>Нова заявка</h2>
