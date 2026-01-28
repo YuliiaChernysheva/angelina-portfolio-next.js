@@ -6,15 +6,11 @@ export default function Hero() {
       <div className={`container ${styles.heroContainer}`}>
         <div className={styles.heroTextContainer}>
           <span className={styles.heroBadge}>UX/UI Designer</span>
-          <h1 className={styles.heroTitle}>
-            Привіт, я Ангеліна
-            <span className={styles.heroEmojiWave} aria-hidden="true">
-              👋
-            </span>
-          </h1>
+          <h1 className={styles.heroTitle}>Привіт, я Ангеліна</h1>
           <p className={styles.heroText}>
-            UX/UI дизайнерка, яка створює інтуїтивні та естетичні цифрові
-            продукти
+            <span className={styles.line1}>UX/UI дизайнерка, </span>
+            <span className={styles.line2}>яка створює інтуїтивні та </span>
+            <span className={styles.line3}>естетичні цифрові продукти</span>
           </p>
         </div>
 

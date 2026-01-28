@@ -78,7 +78,7 @@ export default function About() {
                 </div>
               </li>
 
-              <li className={styles.skill}>
+              <li className={`${styles.skill} ${styles.desktopOnly}`}>
                 <div className={styles.skillTop}>
                   <span>UX дослідження</span>
                   <span>95%</span>
