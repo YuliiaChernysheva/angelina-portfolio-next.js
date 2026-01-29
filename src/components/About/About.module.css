@@ -37,10 +37,10 @@
   position: absolute;
   z-index: -1;
 
-  top: -10px;
+  top: 45px;
   left: -60px;
   width: 367px;
-  height: 337px;
+  height: 237px;
 
   background-color: rgba(255, 142, 225, 0.62);
   filter: blur(35px);
