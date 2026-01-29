@@ -37,12 +37,12 @@
   position: absolute;
   z-index: -1;
 
-  top: 45px;
+  top: -10px;
   left: -60px;
   width: 367px;
-  height: 237px;
+  height: 337px;
 
-  background-color: rgba(255, 142, 225, 0.62);
+  background-color: rgba(255, 142, 225, 0.42);
   filter: blur(35px);
   border-radius: 60% 40% 60% 40%;
 }
