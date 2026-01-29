@@ -1,51 +1,24 @@
 "use client";
 
-import { useState } from "react";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
-  const [status, setStatus] = useState("idle"); // idle | sending | success | error
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const payload = {
-      name: (formData.get("name") || "").toString().trim(),
-      email: (formData.get("email") || "").toString().trim(),
-      message: (formData.get("message") || "").toString().trim(),
-    };
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (!res.ok) throw new Error("Failed");
-
-      setStatus("success");
-      form.reset();
-    } catch (err) {
-      setStatus("error");
-    }
-  };
-
   return (
     <section className={styles.contact} id="contact">
       <div className={`container ${styles.contactContainer}`}>
         <h2 className={styles.contactTitle}>Зв&apos;язатися зі мною</h2>
+
         <p className={styles.contactSubtitle}>
           Шукаєте дизайнера для свого проєкту? Давайте обговоримо, як я можу
           допомогти!
         </p>
 
         <div className={styles.contactLayout}>
-          <form className={styles.contactForm} onSubmit={handleSubmit}>
+          <form
+            className={styles.contactForm}
+            action="https://formspree.io/f/mjgwodlw"
+            method="POST"
+          >
             <label className={styles.contactFormField}>
               <span className={styles.contactFormLabel}>Ім&apos;я</span>
               <input
@@ -78,14 +51,11 @@ export default function Contact() {
               ></textarea>
             </label>
 
-            <button
-              className={styles.contactFormBtn}
-              type="submit"
-              disabled={status === "sending"}
-            >
-              {status === "sending"
-                ? "Відправляю..."
-                : "Відправити повідомлення"}
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
+            <input type="hidden" name="_redirect" value="/thank-you" />
+
+            <button className={styles.contactFormBtn} type="submit">
+              Відправити повідомлення
               <svg
                 className={`${styles.icon} ${styles.iconSend}`}
                 width="16"
@@ -95,13 +65,6 @@ export default function Contact() {
                 <use href="/icons/symbol-defs.svg#icon_telegram"></use>
               </svg>
             </button>
-
-            {status === "success" && (
-              <p className={styles.formNote}>✅ Повідомлення надіслано!</p>
-            )}
-            {status === "error" && (
-              <p className={styles.formNote}>❌ Помилка. Спробуйте ще раз.</p>
-            )}
           </form>
 
           <aside className={styles.contactSide}>
