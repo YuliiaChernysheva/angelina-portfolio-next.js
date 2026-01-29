@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import styles from "./ThankYou.module.css";
+import styles from "./thanks.module.css";
 
 export default function ThankYouPage() {
   useEffect(() => {
