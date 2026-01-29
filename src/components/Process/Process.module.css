@@ -164,6 +164,7 @@
 .cardText {
   letter-spacing: -0.01em;
   color: #717182;
+  font-size: 14px;
 }
 
 @media (min-width: 1179px) {

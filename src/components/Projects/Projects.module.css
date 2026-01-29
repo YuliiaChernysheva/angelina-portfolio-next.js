@@ -23,7 +23,6 @@
   margin: 0 auto 26px;
 }
 
-/* list */
 .projectsList {
   list-style: none;
   padding: 0;
@@ -52,7 +51,6 @@
   object-fit: cover;
 }
 
-/* body */
 .projectTitle {
   margin: 0 0 12px;
   font-weight: 400;
