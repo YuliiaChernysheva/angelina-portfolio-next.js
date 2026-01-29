@@ -1,19 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
 import styles from "./ThankYou.module.css";
 
 export default function ThankYouPage() {
-  // ⭐️ Auto redirect через 3 секунды
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      window.location.href = "/";
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <main className={styles.hero}>
       <div className={styles.card}>
