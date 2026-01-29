@@ -44,7 +44,7 @@
 
   background-color: rgba(255, 142, 225, 0.62);
   filter: blur(35px);
-  border-radius: 0;
+  border-radius: 60% 40% 60% 40%;
 }
 
 .aboutImg {
