@@ -15,12 +15,8 @@ export default function ThankYouPage() {
           Я отримала ваш запит і відповім найближчим часом.
         </p>
 
-        <p className={styles.redirect}>
-          Повернення на головну через 3 секунди…
-        </p>
-
         <Link href="/" className={styles.button}>
-          Повернутися зараз
+          Повернутися назад
         </Link>
       </div>
     </main>
