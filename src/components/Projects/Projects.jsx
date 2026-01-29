@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section className={styles.projects} id="projects">
       <div className={`container ${styles.projectsContainer}`}>
-        <h2 className={styles.projectsTitle}>Мої проекти</h2>
+        <h2 className={styles.projectsTitle}>Мої проєкти</h2>
         <p className={styles.projectsMainText}>
           Кейси, де я застосувала свої знання UX/UI дизайну для вирішення
           реальних проблем

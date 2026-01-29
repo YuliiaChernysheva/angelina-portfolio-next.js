@@ -105,6 +105,10 @@
 }
 
 @media only screen and (min-width: 1179px) {
+  .projects {
+    background-color: rgba(255, 249, 245, 1);
+  }
+
   .projectsTitle {
     font-size: 48px;
     line-height: 1;

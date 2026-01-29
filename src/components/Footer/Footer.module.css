@@ -1,6 +1,7 @@
 .footer {
   padding: 32px;
   border-top: 0.65px solid rgba(0, 0, 0, 0.08);
+  background-color: rgba(245, 239, 233, 0.3);
 }
 
 .footerContainer {
@@ -33,6 +34,10 @@
 }
 
 @media (min-width: 1179px) {
+  .footer {
+    background-color: rgba(252, 250, 249, 1);
+  }
+
   .footerContainer {
     flex-direction: row;
     justify-content: space-between;

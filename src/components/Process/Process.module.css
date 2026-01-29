@@ -1,5 +1,6 @@
 .process {
   padding: 32px;
+  background-color: rgba(245, 239, 233, 0.3);
 }
 
 .processTitle {
@@ -168,6 +169,7 @@
 @media (min-width: 1179px) {
   .process {
     padding: 48px;
+    background-color: rgba(252, 250, 249, 1);
   }
 
   .processTitle {

@@ -1,5 +1,6 @@
 .contact {
   padding: 32px 0;
+  background-color: rgba(245, 239, 233, 0.3);
 }
 
 .contactTitle {
@@ -133,16 +134,11 @@
 }
 
 .contactSideContainer {
-  border: 0.65px solid rgba(244, 165, 185, 0.2);
+  background-color: rgba(244, 165, 185, 0.1);
+  border: 1px solid rgba(244, 165, 185, 0.2);
   border-radius: 16px;
   padding: 24px;
   width: 100%;
-
-  background: linear-gradient(
-    135deg,
-    rgba(244, 165, 185, 0.1) 0%,
-    rgba(199, 179, 229, 0.1) 100%
-  );
 }
 
 .contactSideTitleMe {
@@ -175,12 +171,14 @@
 @media (min-width: 1179px) {
   .contact {
     padding: 64px 0;
+    background-color: rgba(252, 250, 249, 1);
   }
 
   .contactContainer {
     background: rgba(245, 239, 233, 0.3);
     padding: 0;
     max-width: 896px;
+    border-radius: 16px;
   }
 
   .contactTitle {
@@ -213,6 +211,10 @@
     flex: 1;
   }
 
+  .contactSideText {
+    letter-spacing: -0.03em;
+    font-size: 16px;
+  }
   .contactSocial {
     margin-bottom: 8px;
   }
