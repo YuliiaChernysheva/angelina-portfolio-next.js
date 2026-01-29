@@ -38,11 +38,11 @@
   z-index: -1;
 
   top: -20px;
-  left: -43px;
+  left: -60px;
   width: 367px;
   height: 367px;
 
-  background-color: rgba(255, 142, 225, 0.42);
+  background-color: rgba(255, 142, 225, 0.62);
   filter: blur(35px);
   border-radius: 0;
 }
@@ -157,6 +157,7 @@
     left: 20px;
     width: 500px;
     height: 540px;
+    background-color: rgba(255, 142, 225, 0.42);
   }
 
   .aboutText {
