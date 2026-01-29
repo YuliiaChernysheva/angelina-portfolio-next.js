@@ -16,9 +16,20 @@ export default function Contact() {
         <div className={styles.contactLayout}>
           <form
             className={styles.contactForm}
-            action="https://formspree.io/f/mjgwodlw"
+            action="https://api.web3forms.com/submit"
             method="POST"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="786a7a48-4eda-4eb7-ab92-b2207458260b"
+            ></input>
+            <input
+              type="hidden"
+              name="subject"
+              value="New Website Request"
+            ></input>
+
             <label className={styles.contactFormField}>
               <span className={styles.contactFormLabel}>Ім&apos;я</span>
               <input
@@ -54,7 +65,7 @@ export default function Contact() {
             <input type="text" name="_gotcha" style={{ display: "none" }} />
             <input
               type="hidden"
-              name="_redirect"
+              name="redirect"
               value="https://angelina-portfolio-next-js.vercel.app/thank-you"
             />
 

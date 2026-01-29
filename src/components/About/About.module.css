@@ -119,7 +119,7 @@
   .about {
     padding: 32px 0 46px;
 
-    background-color: rgba(252, 250, 249, 1);
+    background: rgba(252, 250, 249, 1);
   }
 
   .aboutTitle {
