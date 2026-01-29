@@ -52,7 +52,11 @@ export default function Contact() {
             </label>
 
             <input type="text" name="_gotcha" style={{ display: "none" }} />
-            <input type="hidden" name="_redirect" value="/thank-you" />
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://angelina-portfolio-next-js.vercel.app/thank-you"
+            />
 
             <button className={styles.contactFormBtn} type="submit">
               Відправити повідомлення
