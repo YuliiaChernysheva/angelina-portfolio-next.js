@@ -28,7 +28,14 @@ The project was built based on real client requirements, including design implem
 - Web3Forms (contact form integration)
 - Vercel (deployment)
 
+  ---
 
-Focus on clean code, scalability, and maintainability
+## 📌 Project Highlights
+
+- First commercial frontend project
+- Built according to real client requirements
+- Focus on clean code, scalability, and maintainability
+- Deployed to production and used in a real-world scenario
+- Focus on clean code, scalability, and maintainability
 
 Deployed to production and used in a real-world scenari
