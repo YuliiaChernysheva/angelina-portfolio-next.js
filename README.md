@@ -38,4 +38,3 @@ The project was built based on real client requirements, including design implem
 - Deployed to production and used in a real-world scenario
 - Focus on clean code, scalability, and maintainability
 
-Deployed to production and used in a real-world scenari
