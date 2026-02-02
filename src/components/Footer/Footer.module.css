@@ -23,14 +23,9 @@
   font-size: 14px;
 }
 
-.footerHeart {
-  margin: 0 6px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.footerHeartIcon {
-  fill: currentColor;
+.footerContainer {
+  flex-direction: column;
+  text-align: center;
 }
 
 @media (min-width: 1179px) {
@@ -40,7 +35,7 @@
 
   .footerContainer {
     flex-direction: row;
-    justify-content: space-between;
     text-align: center;
+    justify-content: flex-end;
   }
 }
